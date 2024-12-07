@@ -49,6 +49,22 @@
 - **Aligning Incentives**:
   - Most revenues are directed toward LPs, enhancing liquidity and market activity. This structure fosters a dynamic environment driven by competitive bidding and calculated funding strategies.
 
+
+### Trade Examples
+- **Profit Scenario**:
+Suppose Adam opens a 5x leveraged long position on an asset priced at $100. She invests $1,000, which effectively gives her exposure to $5,000 (5x leverage).
+Price Increase: The asset price rises by 10% to $110.
+Position Value: Adam’s position is now worth $5,500.
+Profit: Adam’s initial investment of $1,000 has generated a profit of $500 (50% gain on her $1,000).
+
+- **Loss Scenario**: 
+Adam has a 5x leveraged long position on an asset priced at $100. She has invested $1,000, meaning her position value is $5,000.
+Price Decline: The asset price drops by 20% to $80.
+Position Value: Her position is now worth $4,000.
+Collateral Ratio Check: With 5x leverage, a 20% drop means that her collateral no longer covers her leveraged exposure. The protocol triggers liquidation if her collateral drops below a certain threshold, say 80% of her initial collateral.
+Liquidation: Automated liquidators step in to close Adam’s position to prevent further loss. They receive a portion of her collateral as a liquidation penalty, which compensates them for protecting the protocol’s solvency.
+
+
 ### Conclusion
 
 The UniLaas effectively leverages a novel auction mechanism to manage the complexities of perpetual options trading. By balancing risk and reward through strategic pricing and continuous competition, it creates an engaging and potentially profitable ecosystem for traders, keepers, and liquidity providers. This innovative structure could significantly enhance trading opportunities within the DeFi landscape, leading to more efficient price discovery and liquidity provisioning.
